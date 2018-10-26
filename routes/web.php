@@ -19,3 +19,6 @@ Route::get('/', function () {
 
     return view('welcome');
 });
+
+//商品管理
+Route::get('/product', 'ProductsController@index');
