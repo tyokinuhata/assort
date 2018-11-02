@@ -14,6 +14,8 @@ class RecievdController extends Controller
     public function index()
     {
         //
+        return view('Recievd/recievd');
+
     }
 
     /**

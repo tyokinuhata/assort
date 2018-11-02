@@ -26,6 +26,8 @@ Route::get('/order_search', 'OrderController@index');
 //商品管理
 Route::get('/product_search', 'ProductsController@index');
 Route::get('/product_detail', 'ProductsController@product_detail');
+//注文確認
+Route::get('/recievde', 'RecievdController@index');
 
 
 //
