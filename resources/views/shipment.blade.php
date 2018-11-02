@@ -1,5 +1,5 @@
 @extends('layout.common')
-@section('title', '商品管理')
+@section('title', '発送管理')
 
 @section('content')
     <div class="main_content">
