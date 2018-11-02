@@ -3,7 +3,7 @@
 
 @section('content')
 	<div class="main_content">
-    <h1 id="title">仕入先管理画面</h1>
+    <h1 id="title">商品デザイン管理画面</h1>
 
     <table>
         <tbody>
