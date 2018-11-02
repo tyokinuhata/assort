@@ -11,21 +11,14 @@ class ArrivalController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
-        return view('aririval_content');
+
+    public function index(){
+        return view('aririval_search');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+    public function arrival_detail(){
+		return view('arrival_content');
+	}
 
     /**
      * Store a newly created resource in storage.
