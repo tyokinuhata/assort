@@ -35,8 +35,6 @@ class CreateCustomerAddressTable extends Migration
 
             $table->index(["customer_id"], 'fk_customer_address_customer1_idx');
 
-
-           
         });
     }
 
