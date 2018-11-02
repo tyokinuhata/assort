@@ -1,53 +1,61 @@
 @extends('layout.common')
-@section('title', '商品管理')
+@section('title', '発注管理')
 
 @section('content')
 	<div class="main_content">
-	<h1 id="title">注文確認画面</h1>
+	<h1 id="title">発注管理画面</h1>
 
 	<table>
 		<tbody>
 		<tr>
-			<th colspan="2">注文内容</th>
+			<th colspan="2">発注情報</th>
+		</tr>
+	　<tr>
+			<th class="left">商品コード</th>
+			<td><input type="text" name="" size="20" maxlength="40" value="" placeholder="商品コード"><button>Search</button></td>
+		</tr>
+	<tr>
+			<th class="left">商品名</th>
+			<td>検索結果</td>
 		</tr>
 		<tr>
-		<th class="left">注文番号</th>
+		<th class="left">発注日</th>
 		<td></td>
 		</tr>
 		<tr>
-			<th class="left">注文日</th>
+			<th class="left">納期</th>
 			<td></td>
 		</tr>
 	　<tr>
-			<th class="left">注文者</th>
-			<td></td>
+			<th class="left">仕入先</th>
+			<td><input type="text" name="" size="60" maxlength="60" value="" placeholder="仕入先"></td>
 		</tr>
 	　<tr>
-			<th class="left">発送日</th>
-			<td></td>
+			<th class="left">支払先</th>
+			<td><input type="text" name="" size="60" maxlength="60" value="" placeholder="支払先"></td></td>
 		</tr>
 	　<tr>
-			<th class="left">お届け先</th>
-			<td></td>
+			<th class="left">発注担当者</th>
+			<td><input type="text" name="" size="40" maxlength="40" value="" placeholder="発注担当者"></td>
 		</tr>
 	　<tr>
-			<th class="left">電話番号</th>
-			<td></td>
+			<th class="left">発注数</th>
+			<td><input type="number" name="" size="10" maxlength="40" value="" ></td>
 		</tr>
 	　<tr>
-			<th class="left">支払い方法</th>
-			<td></td>
+			<th class="left">発注単価</th>
+			<td><input type="number" name="" size="7" maxlength="7" value="" placeholder="発注単価"></td>
 		</tr>
 	　<tr>
-			<th class="left">支払い金額</th>
+			<th class="left">発注金額</th>
 			<td></td>
 		</tr>
 		<tr>
-			<th class="left">更新者</th>
+			<th class="left">最終更新者</th>
 			<td></td>
 		</tr>
 		<tr>
-			<th class="left">更新日</th>
+			<th class="left">最終更新日</th>
 			<td></td>
 		</tr>
 		</tbody>
