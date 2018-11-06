@@ -11,15 +11,18 @@ table {
   border-collapse: separate;
   border-radius: 5px;
   border-spacing: 0;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #f8fafc;
+  //margin-left: auto;
+  // margin-right: auto;
+  // margin-top: 10px;
 }
 
 table th,table td {
   border-bottom: 1px solid #ccc;
-  padding: 10px 20px;
+	padding: 10px 20px;
+	font-weight: 100;
 }
 
 table th {
@@ -57,7 +60,8 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: serif;
-  font-size: 18px;
+	font-size: 18px;
+	background-color: #fff;
 }
 
 .square_btn{
@@ -131,18 +135,22 @@ body {
     color: #ff0000;
 }
 
-div {
-  margin-top: 10px;
-  margin-right: 50px;
-  margin-bottom: 10px;
-}
+// div {
+//   margin-top: 10px;
+//   margin-right: 50px;
+//   margin-bottom: 10px;
+// }
 
 header {
   /* background-color: #ccccff; */
 }
 
 #title {
-	margin: 0;
+	margin: 0!important;
+	padding: 5px;
+	font-family: sans-serif;
+	line-height: 2.25rem;
+	padding-left: calc(( 100% - 768px ) / 2 )
 }
 
 h1 {
@@ -219,4 +227,38 @@ h1 {
 }
 .main_content::-webkit-scrollbar{
 	/* display: none; */
+}
+.content_wrapper{
+	max-width: 768px;
+	margin: 0 auto;
+	padding-top: 10px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+.controll_buttons{
+	//padding: 10px;
+	text-align: right;
+
+	.btn{
+		width: 75px;
+		font-weight: 100;
+		&:hover{
+			background-color: #29e6ff;
+			color: #fff;
+		}
+	}
+}
+.row{
+	margin-left: 0;
+	width: 100%;
+
+	.hyphen{
+		//フォーム内ハイフン
+		width: 25px;
+		text-align: center;
+		line-height: 40px;
+	}
+}
+.select2{
+	width: 100px;
 }

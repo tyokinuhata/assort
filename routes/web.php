@@ -20,14 +20,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 //発注管理
 Route::get('/order_search', 'OrderController@index');
+Route::get('/order_detail', 'OrderController@show');
+Route::get('/order_edit', 'OrderController@update');
+Route::get('/order_delete', 'OrderController@destroy');
 
 //商品管理
 Route::get('/product_search', 'ProductsController@index');
-Route::get('/product_detail', 'ProductsController@product_detail');
-//注文確認
-Route::get('/recievde', 'RecievdController@index');
+Route::get('/product_detail', 'ProductsController@show');
 
 
 //
