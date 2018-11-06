@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class RecievdController extends Controller
+class RecievedController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class RecievdController extends Controller
     public function index()
     {
         //
-        return view('Recievd/recievd');
+        return view('Recieved/recieved');
 
     }
 
