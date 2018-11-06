@@ -94,9 +94,4 @@
 			<i class="fa fa-caret-right"></i>削除</a>
 	</div>
 </div>
-<script>
-$(document).ready(function() {
-	$('.select2').select2();
-});
-</script>
 @endsection
