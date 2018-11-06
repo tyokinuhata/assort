@@ -1,5 +1,6 @@
 @extends('layout.common')
 @section('title', '商品検索画面')
+@section('header_title', '商品検索画面')
 
 @section('content')
 <div class="content_wrapper">
@@ -94,9 +95,4 @@
 			<i class="fa fa-caret-right"></i>削除</a>
 	</div>
 </div>
-<script>
-$(document).ready(function() {
-	$('.select2').select2();
-});
-</script>
 @endsection

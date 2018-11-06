@@ -13,11 +13,12 @@ class ArrivalController extends Controller
      */
 
     public function index(){
+        
         return view('aririval_search');
     }
 
     public function arrival_detail(){
-		return view('arrival_content');
+        return view('arrival_content');
 	}
 
     /**

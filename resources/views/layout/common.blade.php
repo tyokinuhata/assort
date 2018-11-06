@@ -11,9 +11,14 @@
 <article>
 	@include('layout.side')
 	<div class="main_content">
-		<h1 id="title">商品検索画面</h1>
+		<h1 id="title">@yield('header_title')</h1>
 		@yield('content')
 	</div>
 </article>
+<script>
+$(document).ready(function() {
+	$('.select2').select2();
+});
+</script>
 </body>
 </html>
