@@ -31,5 +31,5 @@ Route::get('/order_delete', 'OrderController@destroy');
 Route::get('/product_search', 'ProductsController@index');
 Route::get('/product_detail', 'ProductsController@show');
 
-
-//
+//注文管理
+Route::get('/recieved', 'RecievedController@index');
