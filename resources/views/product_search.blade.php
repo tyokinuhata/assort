@@ -1,5 +1,6 @@
 @extends('layout.common')
 @section('title', '商品検索画面')
+@section('header_title', '商品検索画面')
 
 @section('content')
 <div class="content_wrapper">
