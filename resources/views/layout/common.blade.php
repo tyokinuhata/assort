@@ -10,7 +10,10 @@
 <body>
 <article>
 	@include('layout.side')
-	@yield('content')
+	<div class="main_content">
+		<h1 id="title">商品検索画面</h1>
+		@yield('content')
+	</div>
 </article>
 </body>
 </html>
