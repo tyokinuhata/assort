@@ -4,22 +4,32 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ArrivalController extends Controller
+class SalesController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
-    public function index(){
-        
-        return view('aririval_search');
+    public function index()
+    {
+        return view('sales_seach');
+        //
     }
 
-    public function arrival_detail(){
-        return view('arrival_content');
-	}
+    public function sales_detail(){
+        return view('sales');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
 
     /**
      * Store a newly created resource in storage.

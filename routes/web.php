@@ -32,7 +32,7 @@ Route::get('/product_search', 'ProductsController@index');
 Route::get('/product_detail', 'ProductsController@show');
 
 //注文管理
-Route::get('/recieved_search', 'RecievedController@index');
+Route::get('/recieved_search','RecievedController@index');
 
 //出金管理
 Route::get('/payment_search', function () {
