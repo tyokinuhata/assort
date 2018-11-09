@@ -19,7 +19,7 @@
             </tr>
             <tr>
                 <th class="left">注文日</th>
-                <td></td>
+                <td><input type="date" name="date" value="2018-01-01"></td>
             </tr>
             　<tr>
                 <th class="left">注文者</th>
@@ -27,11 +27,13 @@
             </tr>
             　<tr>
                 <th class="left">発送日</th>
-                <td></td>
+                <td><input type="date" name="date" value="2018-01-01"></td>
             </tr>
             　<tr>
                 <th class="left">お届け先</th>
-                <td></td>
+                <td class="row"><div class="col-xs-2"><input class="form-control" type="tel" name="" size="3" maxlength="3"　value="" placeholder="000"></div>
+                    <div class="hyphen">-</div>
+                    <div class="form-control" type="text" name="" size="4" maxlength="4" value="" placeholder="0000"></div>
             </tr>
             　<tr>
                 <th class="left">電話番号</th>
@@ -51,11 +53,11 @@
             </tr>
             <tr>
                 <th class="left">更新者</th>
-                <td></td>
+                <td><input type="text" name="" size="40" maxlength="40" value="" placeholder="OIC 太郎"></td>
             </tr>
             <tr>
                 <th class="left">更新日</th>
-                <td></td>
+                <td><input type="date" name="date" value="2018-01-01"></td>
             </tr>
             </tbody>
         </table>
