@@ -19,13 +19,36 @@ table {
 	background-color: #f8fafc;
   //margin-left: auto;
   // margin-right: auto;
-  // margin-top: 10px;
+	// margin-top: 10px;
+	
+	.table-header{
+		line-height: 20px;
+		th{
+			width: 10%;
+		}
+		.table_main_col{
+			width: 30%;
+		}
+	}
+	.btn-outer{
+		text-align: center;
+	}
+}
+.search_result{
+	font-size: 12px;
 }
 
 table th,table td {
   border-bottom: 1px solid #ccc;
 	padding: 10px 20px;
 	font-weight: 100;
+
+}
+
+.table-bordered th, .table-bordered td{
+	padding: 5px;
+	font-size: 12px;
+	line-height: 12px;
 }
 
 table th {
@@ -248,6 +271,7 @@ h1 {
 .controll_buttons{
 	//padding: 10px;
 	text-align: right;
+	margin: 5px 0 20px 0;
 
 	.btn{
 		width: 75px;
@@ -270,5 +294,5 @@ h1 {
 	}
 }
 .select2{
-	width: 100px;
+	width: 100%;
 }
