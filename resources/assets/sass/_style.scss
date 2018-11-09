@@ -5,6 +5,9 @@ article{
 	display: flex;
 	flex-wrap: wrap;
 }
+h1, h2, h3, h4, h5, h6, div, p{
+	margin: 0;
+}
 
 table {
   border: 1px solid #ccc;
@@ -234,6 +237,13 @@ h1 {
 	padding-top: 10px;
 	font-family: sans-serif;
 	font-weight: normal;
+}
+.btn{
+	&:hover{
+		background-color: #fff;
+		border: gray 1px solid;
+		color: gray;
+	}
 }
 .controll_buttons{
 	//padding: 10px;
