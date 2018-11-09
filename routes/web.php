@@ -45,9 +45,8 @@ Route::get('/spending_search', function () {
 });
 
 //売上管理
-Route::get('/sales_search', function () {
-	return view('sales/sales_search');
-});
+Route::get('/sales','SalesController@index');
+
 
 //カテゴリ管理
 Route::get('/category_search', function () {
