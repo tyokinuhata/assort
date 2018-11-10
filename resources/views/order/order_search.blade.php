@@ -1,74 +1,93 @@
 @extends('layout.common')
-@section('title', '発注管理')
+@section('title', '発注検索画面')
+@section('header_title', '発注検索画面')
 
 @section('content')
-	<div class="main_content">
-	<h1 id="title">発注管理画面</h1>
-
-	<table>
+<div class="content_wrapper">
+	<table class="table-bordered">
 		<tbody>
 		<tr>
-			<th colspan="2">発注情報</th>
+			<th colspan="4">発注情報</th>
 		</tr>
-	　<tr>
-			<th class="left">商品コード</th>
-			<td><input type="text" name="" size="20" maxlength="40" value="" placeholder="商品コード"><button>Search</button></td>
-		</tr>
-	<tr>
-			<th class="left">商品名</th>
+		<tr>
+			<th>商品コード</th>
+			<td>
+				<div class="search_box"><input class="form-control" type="text" name=""maxlength="40" value="" placeholder="商品コード"></div>
+				<div class="search_button"><button class="btn">検索</button></div>
+			</td>
+			<th>商品名</th>
 			<td>検索結果</td>
 		</tr>
 		<tr>
-		<th class="left">発注日</th>
-		<td></td>
+			<th>発注日</th>
+			<td><input class="form-control" type="text" name="" maxlength="10" value="" placeholder="2000-12-31"></td>
+			<th>納期</th>
+			<td><input class="form-control" type="text" name="" maxlength="10" value="" placeholder="2000-12-31"></td>
 		</tr>
 		<tr>
-			<th class="left">納期</th>
-			<td></td>
-		</tr>
-	　<tr>
-			<th class="left">仕入先</th>
-			<td><input type="text" name="" size="60" maxlength="60" value="" placeholder="仕入先"></td>
-		</tr>
-	　<tr>
-			<th class="left">支払先</th>
-			<td><input type="text" name="" size="60" maxlength="60" value="" placeholder="支払先"></td></td>
-		</tr>
-	　<tr>
-			<th class="left">発注担当者</th>
-			<td><input type="text" name="" size="40" maxlength="40" value="" placeholder="発注担当者"></td>
-		</tr>
-	　<tr>
-			<th class="left">発注数</th>
-			<td><input type="number" name="" size="10" maxlength="40" value="" ></td>
-		</tr>
-	　<tr>
-			<th class="left">発注単価</th>
-			<td><input type="number" name="" size="7" maxlength="7" value="" placeholder="発注単価"></td>
-		</tr>
-	　<tr>
-			<th class="left">発注金額</th>
-			<td></td>
+			<th>仕入先</th>
+			<td><input class="form-control" type="text" name=""maxlength="60" value="" placeholder="仕入先"></td>
+			<th>支払先</th>
+			<td><input class="form-control" type="text" name=""maxlength="60" value="" placeholder="支払先"></td></td>
 		</tr>
 		<tr>
-			<th class="left">最終更新者</th>
-			<td></td>
+			<th>発注担当者</th>
+			<td><input class="form-control" type="text" name=""  maxlength="40" value="" placeholder="発注担当者"></td>
+			<th>発注数</th>
+			<td>
+				<input class="form-control search_box" type="number" name="" size="10" maxlength="40" value="" >
+				<span class="hyphen">着</span>
+			</td>
 		</tr>
 		<tr>
-			<th class="left">最終更新日</th>
-			<td></td>
+			<th>発注原価</th>
+			<td>
+				<input class="form-control search_box" type="number" name="" size="7" maxlength="7" value="" placeholder="発注単価">
+				<span class="hyphen">円</span>
+			</td>
+			<th>～</th>
+			<td>
+				<input class="form-control search_box" type="number" name="" size="7" maxlength="7" value="" placeholder="発注単価">
+				<span class="hyphen">円</span>
+			</td>
 		</tr>
 		</tbody>
 	</table>
-	<div align="right">
-	<a href="#" class="square_btn">
-		<i class="fa fa-caret-right"></i>登録</a>
-	<a href="#" class="reseto_btn">
-		<i class="fa fa-caret-right"></i>リセット</a> 
-	<a href="#" class="update_btn">
-		<i class="fa fa-caret-right"></i>更新</a>
-	<a href="#" class="delete_btn">
-		<i class="fa fa-caret-right"></i>削除</a>
+	<div class="controll_buttons">
+		<a href="#" class="square_btn btn">
+			<i class="fa fa-caret-right"></i>検索</a>
+		<a href="#" class="square_btn btn">
+			<i class="fa fa-caret-right"></i>新規登録</a>
 	</div>
+	<table class="table-bordered search_result">
+		<tr>
+			<th class="table-header" colspan="9">発注検索結果</th>
+		</tr>
+		<tr class="table-header">
+			<th>発注伝票ID</th>
+			<th>カテゴリ</th>
+			<th class="table_main_col">商品名</th>
+			<th >発注数</th>
+			<th >ステータス</th>
+			<th >納品予定日</th>
+			<th >最終更新者</th>
+			<th >最終更新日</th>
+			<th class="btn-outer">操作</th>
+		</tr>
+		<tr>
+			<td>OD001</td>
+			<td>トップス / シャツ</td>
+			<td>かなりいい感じのTシャツ</td>
+			<td>10 <span class="unit">着</span></td>
+			<td>着荷待ち</td>
+			<td>本日</td>
+			<td>村上透</td>
+			<td>2018-11-09</td>
+			<td class="btn-outer">
+				<a href="" class="btn btn-success">入荷登録</a>
+			</td>
+			</tr>
+		</tr>
+	</table>
 </div>
 @endsection
