@@ -21,19 +21,19 @@
                 <th class="left">注文日</th>
                 <td></td>
             </tr>
-            　<tr>
+            <tr>
                 <th class="left">注文者</th>
                 <td><input class="form-control" type="text" name="" size="40" maxlength="40" value="" placeholder="OIC 太郎"></td>
             </tr>
-            　<tr>
+            <tr>
                 <th class="left">発送日</th>
                 <td></td>
             </tr>
-            　<tr>
+            <tr>
                 <th class="left">お届け先</th>
                 <td></td>
             </tr>
-            　<tr>
+            <tr>
                 <th class="left">電話番号</th>
                 <td class="row">
                     <div class="col-xs-3"><input class="form-control" type="tel" name="" size="4" maxlength="4" value="" placeholder="0000"></div><div class="hyphen">-</div>
@@ -41,11 +41,11 @@
                     <div class="col-xs-3"><input class="form-control" type="tel" name="" size="4" maxlength="4" value="" placeholder="2222"></div>
                 </td>
             </tr>
-            　<tr>
+            <tr>
                 <th class="left">支払い方法</th>
                 <td></td>
             </tr>
-            　<tr>
+            <tr>
                 <th class="left">支払い金額</th>
                 <td></td>
             </tr>

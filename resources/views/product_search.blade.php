@@ -24,7 +24,7 @@
 		<tr>
 			<th class="left">郵便番号</th>
 			<td class="row">
-				<div class="col-xs-2"><input class="form-control " type="tel" name="" size="3" maxlength="3"　value="" placeholder="000"></div>
+				<div class="col-xs-2"><input class="form-control " type="tel" name="" size="3" maxlength="3"value="" placeholder="000"></div>
 				<div class="hyphen">-</div>
 				<div class="col-xs-3"><input class="form-control" type="text" name="" size="4" maxlength="4" value="" placeholder="0000"></div>
 			</td>
