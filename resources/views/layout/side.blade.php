@@ -8,7 +8,7 @@
     <div class="menu_item">
         <a class="menu_block_name has_submenu">商品管理</a>
         <div class="menu_block_hiden">
-            <a href="/product_search" class="menu_block_subitem">商品リスト</a>
+            <a href="/product" class="menu_block_subitem">商品リスト</a>
             <a href="/inventory" class="menu_block_subitem">棚卸し</a>
             <a href="/waste" class="menu_block_subitem">不良品登録</a>
             <a href="/stock_shelf_change" class="menu_block_subitem">棚配置変更</a>

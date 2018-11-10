@@ -8,11 +8,12 @@ class ProductsController extends Controller
 {
 	// 商品検索
 	public function index(){
-		return view('product_search');
+		return view('product/product_search');
 	}
 	// 商品デザイン管理
 	public function show(){
-		return view('product');
+		// return view('product_design');
+		return('aaa');
 	}
 	public function create()
     {
