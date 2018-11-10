@@ -10524,6 +10524,17 @@ table td {
   font-weight: 100;
 }
 
+table th .search_box,
+table td .search_box {
+  width: calc( 100% - 60px);
+  display: inline-block;
+}
+
+table th .search_button,
+table td .search_button {
+  display: inline-block;
+}
+
 .table-bordered th,
 .table-bordered td {
   padding: 5px;

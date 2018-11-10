@@ -10,11 +10,11 @@
 		<tr>
 			<th colspan="2">発注情報</th>
 		</tr>
-	　<tr>
+	<tr>
 			<th class="left">商品コード</th>
 			<td><input type="text" name="" size="20" maxlength="40" value="" placeholder="商品コード"><button>Search</button></td>
 		</tr>
-	<tr>
+		<tr>
 			<th class="left">商品名</th>
 			<td>検索結果</td>
 		</tr>
@@ -26,27 +26,27 @@
 			<th class="left">納期</th>
 			<td></td>
 		</tr>
-	　<tr>
+	<tr>
 			<th class="left">仕入先</th>
 			<td><input type="text" name="" size="60" maxlength="60" value="" placeholder="仕入先"></td>
 		</tr>
-	　<tr>
+	<tr>
 			<th class="left">支払先</th>
 			<td><input type="text" name="" size="60" maxlength="60" value="" placeholder="支払先"></td></td>
 		</tr>
-	　<tr>
+	<tr>
 			<th class="left">発注担当者</th>
 			<td><input type="text" name="" size="40" maxlength="40" value="" placeholder="発注担当者"></td>
 		</tr>
-	　<tr>
+	<tr>
 			<th class="left">発注数</th>
 			<td><input type="number" name="" size="10" maxlength="40" value="" ></td>
 		</tr>
-	　<tr>
+	<tr>
 			<th class="left">発注単価</th>
 			<td><input type="number" name="" size="7" maxlength="7" value="" placeholder="発注単価"></td>
 		</tr>
-	　<tr>
+	<tr>
 			<th class="left">発注金額</th>
 			<td></td>
 		</tr>

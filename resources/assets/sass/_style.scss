@@ -40,6 +40,14 @@ table th,table td {
 	padding: 10px 20px;
 	font-weight: 100;
 
+	.search_box{
+		width: calc( 100% - 60px );
+		display: inline-block;
+	}
+	.search_button{
+		display: inline-block;
+	}
+
 }
 
 .table-bordered th, .table-bordered td{

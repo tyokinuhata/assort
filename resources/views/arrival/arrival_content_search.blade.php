@@ -16,15 +16,15 @@
 			<th class="left">棚番号</th>
 			<td>X-00</td>
 		</tr>
-	　	<tr>
+		<tr>
 			<th class="left">商品コード</th>
 			<td><input class="form-control" type="text" name="" size="20" maxlength="40" value="" placeholder="商品コード"></td>
 		</tr>
-	　	<tr>
+		<tr>
 			<th class="left">入庫数量</th>
 			<td>3</td>
 		</tr>
-	　	<tr>
+		<tr>
 			<th class="left">入庫日時</th>
 			<td><input class="form-control" type="date" name="date" value="2018-01-01"></td>
 		</tr>

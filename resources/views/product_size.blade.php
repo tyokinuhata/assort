@@ -23,12 +23,12 @@
 			<td><input type="text" name="" size="40" maxlength="40" value="" placeholder="商品名（カナ）"></td>
 		</tr>
 		<tr>
-		　<th class="left">カテゴリ</th>
-		　<td><input type="text" name="" size="40" maxlength="40" value="" placeholder="カテゴリー"></td>
+		<th class="left">カテゴリ</th>
+		<td><input type="text" name="" size="40" maxlength="40" value="" placeholder="カテゴリー"></td>
 		</tr>
 		<tr>
-		　<th class="left">ブランド</th>
-		　<td><input type="text" name="" size="40" maxlength="40" value="" placeholder="仕入先コード">
+		<th class="left">ブランド</th>
+		<td><input type="text" name="" size="40" maxlength="40" value="" placeholder="仕入先コード">
 			<input type="text" name="" size="40" maxlength="40" value="" placeholder="ブランド名"></td>
 		</tr>
 		<tr>
