@@ -12,12 +12,15 @@ class ProductsController extends Controller
 	}
 	// 商品デザイン管理
 	public function show(){
-		// return view('product_design');
-		return('aaa');
+		return view('product/product');
+	}
+	public function size_show($product_id, $size_id){
+		return view('product/product_size');
 	}
 	public function create()
     {
-        //
+				//
+				return('create');
     }
 
     /**
@@ -62,6 +65,7 @@ class ProductsController extends Controller
      */
     public function destroy($id)
     {
-        //
+				//
+			return('destroy');
     }
 }

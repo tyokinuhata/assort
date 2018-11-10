@@ -31,8 +31,9 @@ Route::get('/order_delete', 'OrderController@destroy');
 // Route::get('/product_search', 'ProductsController@index');
 // 	// 商品デザイン検索
 // Route::get('/product_detail', 'ProductsController@show');
-// 	// 商品デザイン詳細
+// 	// 商品デザイン詳細まわりのルーティング
 Route::resource('product', 'ProductsController');
+Route::get('product/{product_id?}/size/{size_id?}', 'ProductsController@size_show');
 
 //注文管理
 Route::get('/recieved_search','RecievedController@index');
