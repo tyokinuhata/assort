@@ -66,6 +66,11 @@ class ProductsController extends Controller
     public function destroy($id)
     {
 				//
-			return('destroy');
+			return('designdestroy');
+		}
+		public function size_destroy($product_id, $size_id)
+    {
+				//
+			return('size'.$product_id.$size_id.'destroy');
     }
 }

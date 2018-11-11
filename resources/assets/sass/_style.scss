@@ -29,6 +29,10 @@ table {
 	}
 	.btn-outer{
 		text-align: center;
+		width: 100px !important;
+		.btn{
+			width: 80px !important;
+		}
 	}
 }
 .search_result{
@@ -259,6 +263,13 @@ h1 {
 .main_content::-webkit-scrollbar{
 	/* display: none; */
 }
+.search_box{
+	width: calc( 100% - 69px );
+	display: inline-block;
+}
+.search_button{
+	width: 20%;
+}
 .content_wrapper{
 	max-width: 768px;
 	margin: 0 auto;
@@ -275,9 +286,24 @@ h1 {
 		width: 75px;
 		font-weight: 100;
 		&:hover{
-			background-color: #29e6ff;
+			background-color: gray;
 			color: #fff;
 		}
+	}
+	.btn-danger{
+		&:hover{
+			background-color: crimson;
+		}
+	}
+	.btn-success{
+		&:hover{
+			background-color: limegreen;
+		}
+	}
+}
+.overflow_btn{
+	.btn{
+		width: inherit;
 	}
 }
 .row{

@@ -114,6 +114,10 @@
 					<td><input class="form-control" type="number"></td>
 				</tr>
 				<tr>
+						<th>棚番号</th>
+						<td><input class="form-control" type="text"></td>
+					</tr>
+				<tr>
 					<th>最終更新者</th>
 					<td>村上透</td>
 			</tr>
@@ -126,6 +130,7 @@
 		<div class="controll_buttons">
 			<!-- {{ method_field('delete') }}
 			<input type='hidden' name='id' value='1'><br> -->
+			<a href="/product/1" class="btn btn-dark">戻る</a>
 			<input class="btn btn-success" type='submit' value='更新'>
 		</div>
 	</form>

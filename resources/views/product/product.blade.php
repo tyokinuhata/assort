@@ -1,96 +1,99 @@
 @extends('layout.common')
-@section('title', '商品管理')
+@section('title', '商品詳細管理')
+@section('header_title', '商品詳細画面')
 
 @section('content')
-	<div class="main_content">
-    <h1 id="title">商品デザイン管理画面</h1>
-
-    <table>
-        <tbody>
-        <tr>
-            <th colspan="2">仕入先情報</th>
-        </tr>
-        <tr>
-            <th class="left">仕入先コード</th>
-            <td></td>
-        </tr>
-        <tr>
-            <th class="left">仕入先名</th>
-            <td><input type="text" name="" size="40" maxlength="40" value="" placeholder="OIC 太郎"></td>
-        </tr>
-        <tr>
-            <th class="left">仕入先名（カナ）</th>
-            <td><input type="text" name="" size="40" maxlength="60" value="" placeholder="oic tarou"></td>
-        </tr>
-        <tr>
-            <th class="left">郵便番号</th>
-            <td><input type="tel" name="" size="3" maxlength="3"value="" placeholder="000">-
-                <input type="text" name="" size="4" maxlength="4" value="" placeholder="0000"></td>
-        </tr>
-        <tr>
-            <th class="left">都道府県</th>
-            <td>
-                <select name="gender">
-                    <option value="">大阪府</option>
-                    <option value="">奈良県</option>
-                    <option value="">琵琶湖</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <th class="left">市区町村</th>
-            <td><input type="text" name="" size="40" maxlength="40" value="" placeholder="市区町村"></td>
-        </tr>
-        <tr>
-            <th class="left">番地建物名</th>
-            <td><input type="text" name="" size="40" maxlength="40" value="" placeholder="番地建物名"></td>
-        </tr>
-        <tr>
-            <th class="left">メールアドレス</th>
-            <td>
-                <input type="email" name="" size="20" maxlength="40" value="" placeholder="xxxxx@xxx.xxx">
-            </td>
-        </tr>
-        <tr>
-            <th class="left">電話番号</th>
-            <td>
-                <input type="tel" name="" size="4" maxlength="4" value="" placeholder="0000">-
-                <input type="tel" name="" size="4" maxlength="4" value="" placeholder="1111">-
-                <input type="tel" name="" size="4" maxlength="4" value="" placeholder="2222">
-            </td>
-        </tr>
-        <tr>
-            <th class="left">FAX</th>
-            <td>
-                <input type="tel" name="" size="4" maxlength="4" value="" placeholder="0000">-
-                <input type="tel" name="" size="4" maxlength="4" value="" placeholder="1111">-
-                <input type="tel" name="" size="4" maxlength="4" value="" placeholder="2222">
-            </td>
-        </tr>
-        <tr>
-            <th class="left">社内担当者</th>
-            <td><input type="text" name="" size="40" maxlength="40" value="" placeholder="OIC 太郎"></td>
-        </tr>
-        <tr>
-        <tr>
-            <th class="left">更新者</th>
-            <td><input type="text" name="" size="40" maxlength="40" value="" placeholder="OIC 太郎"></td>
-        </tr>
-        <tr>
-            <th class="left">更新日</th>
-            <td><input type="date" name="date" value="2018-01-01"></td>
-        </tr>
-        </tbody>
-    </table>
-    <div align="right">
-        <a href="#" class="square_btn">
-            <i class="fa fa-caret-right"></i>登録</a>
-        <a href="" class="reseto_btn">
-            <i class="fa fa-caret-right"></i>リセット</a>
-        <a href="#" class="update_btn">
-            <i class="fa fa-caret-right"></i>更新</a>
-        <a href="#" class="delete_btn">
-            <i class="fa fa-caret-right"></i>削除</a>
-		</div>
+<div class="content_wrapper">
+	<table class="table-bordered">
+		<tr>
+			<th colspan="4">商品デザイン詳細</th>
+		</tr>
+		<tr>
+			<th>ブランドコード</th>
+			<td>BR001</td>
+			<th>ブランド名</th>
+			<td>やばくないTシャツ屋さん</td>
+		</tr>
+		<tr>
+			<th>親カテゴリ</th>
+			<td>
+				<select class="form-control select2" name="" id="">
+					<option value="">アレ</option>
+					<option value="">コレ</option>
+					<option value="">ドレ</option>
+				</select>
+			</td>
+			<th>カテゴリ</th>
+			<td>
+				<select class="form-control select2" name="" id="">
+					<option value="">ソレ</option>
+					<option value="">ホレ</option>
+					<option value="">オレ</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>販売価格</th>
+			<td>
+				<input class="form-control search_box" type="text" placeholder="999">
+				<span class="hyphen">円</span>
+			</td>
+			<th>社内担当者</th>
+			<td>
+				<input class="form-control" type="text" name="" maxlength="40" value="" placeholder="村上透">
+			</td>
+		</tr>
+		<tr>
+			<th >最終更新者</th>
+			<td>
+				<input class="form-control" type="text" name="" maxlength="40" value="" placeholder="村上透">
+			</td>	
+			<th >最終更新日</th>
+			<td>
+				<input class="form-control" type="date" name="date" value="2018-01-01">
+			</td>
+		</tr>
+	</table>
+	<div class="controll_buttons overflow_btn">
+		<form action='/product/1' method='POST'>
+			{{ csrf_field() }}
+			{{ method_field('delete') }}
+			<input class="btn btn-danger" type="submit" value="デザイン削除">
+		</form>
 	</div>
+	<table class="table-bordered search_result">
+		<tr>
+			<th class="table-header" colspan="8">サイズ検索結果</th>
+		</tr>
+		<tr class="table-header">
+			<th>商品サイズID</th>
+			<th class="">性別</th>
+			<th class="">サイズ</th>
+			<th class="">色</th>
+			<th >棚番号</th>
+			<th >在庫数</th>
+			<th class="btn-outer">編集</th>
+			<th class="btn-outer">削除</th>
+		</tr>
+		<tr>
+			<td>PR1001</td>
+			<td>メンズ</td>
+			<td>L</td>
+			<td>モノトーン</td>
+			<td>A001</td>
+			<td>10</td>
+			<td class="btn-outer">
+				<a href="/product/1/size/1" class="btn btn-success">編集</a>
+			</td>
+			<td class="btn-outer">
+				<form action='/product/1/size/1' method='POST'>
+					{{ csrf_field() }}
+					{{ method_field('delete') }}
+					<input class="btn btn-danger" type="submit" value="削除">
+				</form>
+			</td>
+			</tr>
+		</tr>
+	</table>
+</div>
 @endsection
