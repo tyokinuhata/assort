@@ -29,8 +29,8 @@
             </tr>
             　<tr>
                 <th class="left">お届け先</th>
-                <td><input type="text" name="" size="40" maxlength="40" value="市区町村">
-                <input type="text" name="" size="40" maxlength="40" value="番地建物名">
+                <td><input type="text" name="" size="40" maxlength="40" value="市区町村"></td>
+                <td><input type="text" name="" size="40" maxlength="40" value="番地建物名">
                 </td>
             </tr>
 
