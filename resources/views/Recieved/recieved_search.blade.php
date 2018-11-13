@@ -14,8 +14,6 @@
             <tr>
                 <th class="left">注文番号</th>
 
-
-                <td></td>
             </tr>
             <tr>
                 <th class="left">注文日</th>
@@ -46,7 +44,16 @@
             </tr>
             　<tr>
                 <th class="left">支払い方法</th>
-                <td></td>
+                <td>
+                    <select name="payment">
+                        <option value="">クレジットカード</option>
+                        <option value="">口座</option>
+                        <option value="">後払い</option>
+                        <option value="">銀行振込</option>
+                        <option value="">新しい支払方法(ディビットカード等)</option>
+                        <option value="">後払い</option>
+                    </select>
+                </td>
             </tr>
             　<tr>
                 <th class="left">支払い金額</th>
