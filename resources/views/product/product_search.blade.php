@@ -71,7 +71,7 @@
 			</tbody>
 		</table>
 		<div class="controll_buttons overflow_btn">
-			<a class="btn btn-dark" href="/prodct/create">デザイン登録</a>
+			<a class="btn btn-dark" href="/product/create">デザイン登録</a>
 			<input class="btn btn-success" type="submit" value="検索">
 		</div>
 	</form>
