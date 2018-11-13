@@ -1,11 +1,10 @@
 @extends('layout.common')
 @section('title', '注文確認画面')
+@section('header_title', '注文確認画面')
 
 @section('content')
-    <div class="main_content">
-        <h1 id="title">注文確認画面</h1>
-
-        <table>
+    <div class="content_wrapper">
+        <table class="table-bordered">
             <tbody>
             <tr>
                 <th colspan="2">注文内容</th>
@@ -60,13 +59,13 @@
             </tbody>
         </table>
         <div align="right">
-            <a href="#" class="square_btn">
+            <a href="#" class="square_btn btn">
                 <i class="fa fa-caret-right"></i>登録</a>
-            <a href="#" class="reseto_btn">
+            <a href="#" class="reseto_btn btn">
                 <i class="fa fa-caret-right"></i>リセット</a>
-            <a href="#" class="update_btn">
+            <a href="#" class="update_btn btn">
                 <i class="fa fa-caret-right"></i>更新</a>
-            <a href="#" class="delete_btn">
+            <a href="#" class="delete_btn btn">
                 <i class="fa fa-caret-right"></i>削除</a>
         </div>
     </div>

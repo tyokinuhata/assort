@@ -1,18 +1,17 @@
 @extends('layout.common')
 @section('title', '発注管理')
+@section('header_title', '発注管理')
 
 @section('content')
-	<div class="main_content">
-	<h1 id="title">発注管理画面</h1>
-
-	<table>
+	<div class="content_wrapper">
+	<table class="table-bordered">
 		<tbody>
 		<tr>
 			<th colspan="2">発注情報</th>
 		</tr>
 	　<tr>
 			<th class="left">商品コード</th>
-			<td><input type="text" name="" size="20" maxlength="40" value="" placeholder="商品コード"><button>Search</button></td>
+			<td><input class="form-control" type="text" name="" size="20" maxlength="40" value="" placeholder="商品コード"><button>Search</button></td>
 		</tr>
 	<tr>
 			<th class="left">商品名</th>
@@ -28,23 +27,23 @@
 		</tr>
 	　<tr>
 			<th class="left">仕入先</th>
-			<td><input type="text" name="" size="60" maxlength="60" value="" placeholder="仕入先"></td>
+			<td><input class="form-control" type="text" name="" size="60" maxlength="60" value="" placeholder="仕入先"></td>
 		</tr>
 	　<tr>
 			<th class="left">支払先</th>
-			<td><input type="text" name="" size="60" maxlength="60" value="" placeholder="支払先"></td></td>
+			<td><input class="form-control" type="text" name="" size="60" maxlength="60" value="" placeholder="支払先"></td></td>
 		</tr>
 	　<tr>
 			<th class="left">発注担当者</th>
-			<td><input type="text" name="" size="40" maxlength="40" value="" placeholder="発注担当者"></td>
+			<td><input class="form-control" type="text" name="" size="40" maxlength="40" value="" placeholder="発注担当者"></td>
 		</tr>
 	　<tr>
 			<th class="left">発注数</th>
-			<td><input type="number" name="" size="10" maxlength="40" value="" ></td>
+			<td><input class="form-control" type="number" name="" size="10" maxlength="40" value="" ></td>
 		</tr>
 	　<tr>
 			<th class="left">発注単価</th>
-			<td><input type="number" name="" size="7" maxlength="7" value="" placeholder="発注単価"></td>
+			<td><input class="form-control" type="number" name="" size="7" maxlength="7" value="" placeholder="発注単価"></td>
 		</tr>
 	　<tr>
 			<th class="left">発注金額</th>
@@ -60,15 +59,15 @@
 		</tr>
 		</tbody>
 	</table>
-	<div align="right">
-	<a href="#" class="square_btn">
-		<i class="fa fa-caret-right"></i>登録</a>
-	<a href="#" class="reseto_btn">
-		<i class="fa fa-caret-right"></i>リセット</a> 
-	<a href="#" class="update_btn">
-		<i class="fa fa-caret-right"></i>更新</a>
-	<a href="#" class="delete_btn">
-		<i class="fa fa-caret-right"></i>削除</a>
+	<div class="controll_buttons">
+		<a href="#" class="square_btn btn">
+			<i class="fa fa-caret-right"></i>登録</a>
+		<a href="#" class="reseto_btn btn">
+			<i class="fa fa-caret-right"></i>リセット</a>
+		<a href="#" class="update_btn btn">
+			<i class="fa fa-caret-right"></i>更新</a>
+		<a href="#" class="delete_btn btn">
+			<i class="fa fa-caret-right"></i>削除</a>
 	</div>
-</div>
+	</div>
 @endsection

@@ -53,7 +53,7 @@ Route::get('/category_search', function () {
 	return view('category/category_search');
 });
 
-//ブランド管理
+//仕入先管理
 Route::get('/brand_search', function () {
 	return view('brand/brand_search');
 });
@@ -74,6 +74,6 @@ Route::get('/size_search', function () {
 	return view('size/size_search');
 });
 //棚番号管理
-Route::get('/stock_shelf', function () {
+Route::get('/stock_shelf_search', function () {
 	return view('stock_shelf/stock_shelf_search');
 });
