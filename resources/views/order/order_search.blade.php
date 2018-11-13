@@ -25,10 +25,32 @@
 			<td><input class="form-control" type="text" name="" maxlength="10" value="" placeholder="2000-12-31"></td>
 		</tr>
 		<tr>
-			<th>仕入先</th>
-			<td><input class="form-control" type="text" name=""maxlength="60" value="" placeholder="仕入先"></td>
-			<th>支払先</th>
-			<td><input class="form-control" type="text" name=""maxlength="60" value="" placeholder="支払先"></td></td>
+			<th class="left">納期</th>
+			<td></td>
+		</tr>
+	　<tr>
+			<th class="left">仕入先</th>
+			<td><input class="form-control" type="text" name="" size="60" maxlength="60" value="" placeholder="仕入先"></td>
+		</tr>
+	　<tr>
+			<th class="left">支払先</th>
+			<td><input class="form-control" type="text" name="" size="60" maxlength="60" value="" placeholder="支払先"></td></td>
+		</tr>
+	　<tr>
+			<th class="left">発注担当者</th>
+			<td><input class="form-control" type="text" name="" size="40" maxlength="40" value="" placeholder="発注担当者"></td>
+		</tr>
+	　<tr>
+			<th class="left">発注数</th>
+			<td><input class="form-control" type="number" name="" size="10" maxlength="40" value="" ></td>
+		</tr>
+	　<tr>
+			<th class="left">発注単価</th>
+			<td><input class="form-control" type="number" name="" size="7" maxlength="7" value="" placeholder="発注単価"></td>
+		</tr>
+	　<tr>
+			<th class="left">発注金額</th>
+			<td></td>
 		</tr>
 		<tr>
 			<th>発注担当者</th>

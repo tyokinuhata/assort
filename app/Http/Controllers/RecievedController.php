@@ -14,7 +14,7 @@ class RecievedController extends Controller
     public function index()
     {
         //
-        return view('Recieved/recieved');
+        return view('Recieved/recieved_search');
 
     }
 

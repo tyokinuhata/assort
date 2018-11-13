@@ -28,8 +28,13 @@ Route::get('/order_edit', 'OrderController@update');
 Route::get('/order_delete', 'OrderController@destroy');
 
 //商品管理
-Route::get('/product_search', 'ProductsController@index');
-Route::get('/product_detail', 'ProductsController@show');
+// Route::get('/product_search', 'ProductsController@index');
+// 	// 商品デザイン検索
+// Route::get('/product_detail', 'ProductsController@show');
+// 	// 商品デザイン詳細まわりのルーティング
+Route::resource('product', 'ProductsController');
+Route::get('product/{product_id?}/size/{size_id?}', 'ProductsController@size_show');
+Route::delete('product/{product_id?}/size/{size_id?}', 'ProductsController@size_destroy');
 
 //注文管理
 Route::get('/recieved_search','RecievedController@index');
@@ -53,7 +58,7 @@ Route::get('/category_search', function () {
 	return view('category/category_search');
 });
 
-//ブランド管理
+//仕入先管理
 Route::get('/brand_search', function () {
 	return view('brand/brand_search');
 });
@@ -74,6 +79,6 @@ Route::get('/size_search', function () {
 	return view('size/size_search');
 });
 //棚番号管理
-Route::get('/stock_shelf', function () {
+Route::get('/stock_shelf_search', function () {
 	return view('stock_shelf/stock_shelf_search');
 });
