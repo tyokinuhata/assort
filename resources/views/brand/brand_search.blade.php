@@ -71,12 +71,14 @@
 				</tr>
 				<tr>
 					<th class="left">FAX</th>
-					<td>
-                    <div class="col-xs-3"><input class="form-control" type="tel" name="" size="4" maxlength="4" value="" placeholder="0000"></div>
-                    <div class="hyphen">-</div>    
-                    <div class="col-xs-3"><input class="form-control" type="tel" name="" size="4" maxlength="4" value="" placeholder="1111"></div>
-                    <div class="hyphen">-</div>
-					<div class="col-xs-3"><input class="form-control" type="tel" name="" size="4" maxlength="4" value="" placeholder="2222">
+					<td class="row">
+						<div class="col-xs-3"><input class="form-control" type="tel" name="" size="4" maxlength="4" value="" placeholder="0000">
+						</div>
+						<div class="hyphen">-</div>
+						<div class="col-xs-3"><input class="form-control" type="tel" name="" size="4" maxlength="4" value="" placeholder="1111">
+						</div>
+						<div class="hyphen">-</div>
+						<div class="col-xs-3"><input class="form-control" type="tel" name="" size="4" maxlength="4" value="" placeholder="2222"></div>
                     </div>
 					</td>
 				</tr>
