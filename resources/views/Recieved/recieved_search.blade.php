@@ -31,10 +31,11 @@
             </tr>
             　<tr>
                 <th class="left">お届け先</th>
-                <td class="row"><div class="col-xs-2"><input class="form-control" type="tel" name="" size="3" maxlength="3"　value="" placeholder="000"></div>
-                    <div class="hyphen">-</div>
-                    <div class="form-control" type="text" name="" size="4" maxlength="4" value="" placeholder="0000"></div>
+                <td><input type="text" name="" size="40" maxlength="40" value="市区町村">
+                <input type="text" name="" size="40" maxlength="40" value="番地建物名">
+                </td>
             </tr>
+
             　<tr>
                 <th class="left">電話番号</th>
                 <td class="row">
