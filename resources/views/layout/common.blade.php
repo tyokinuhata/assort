@@ -3,8 +3,7 @@
 <head>
 	<meta charset="utf8">
 	<title>@yield('title') | assort</title>
-	<link href="css/app.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link href="/css/app.css" rel="stylesheet">
 	<script src="/js/app.js"></script>
 </head>
 <body>

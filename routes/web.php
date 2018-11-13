@@ -28,8 +28,13 @@ Route::get('/order_edit', 'OrderController@update');
 Route::get('/order_delete', 'OrderController@destroy');
 
 //商品管理
-Route::get('/product_search', 'ProductsController@index');
-Route::get('/product_detail', 'ProductsController@show');
+// Route::get('/product_search', 'ProductsController@index');
+// 	// 商品デザイン検索
+// Route::get('/product_detail', 'ProductsController@show');
+// 	// 商品デザイン詳細まわりのルーティング
+Route::resource('product', 'ProductsController');
+Route::get('product/{product_id?}/size/{size_id?}', 'ProductsController@size_show');
+Route::delete('product/{product_id?}/size/{size_id?}', 'ProductsController@size_destroy');
 
 //注文管理
 Route::get('/recieved_search','RecievedController@index');
