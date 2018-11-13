@@ -14,23 +14,23 @@
                 <th class="left">商品コード</th>
                 <td></td>
                 </tr>
-                　<tr>
+                <tr>
                     <th class="left">商品名</th>
                     <td><input type="text" name="" size="40" maxlength="40" value="" placeholder="商品名"></td>
                 </tr>
-                　<tr>
+                <tr>
                     <th class="left">数量</th>
                     <td><input type="number" name="" size="3" maxlength="3" value=""></td>
                 </tr>
-                　<tr>
+                <tr>
                     <th class="left">廃棄予定日</th>
                     <td><input type="date" name="date" value="2018-01-01"></td>
                 </tr>
-                　<tr>
+                <tr>
                     <th class="left">廃棄理由</th>
                     <td><input type="text" name="" size="40" maxlength="40" value="" placeholder="廃棄理由"></td>
                 </tr>
-                　<tr>
+                <tr>
                     <th class="left">廃棄理由詳細</th>
                     <td><input type="text" name="" size="40" maxlength="200" value="" placeholder="廃棄理由詳細"></td>
                 </tr>

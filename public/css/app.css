@@ -10511,6 +10511,11 @@ table .table-header .table_main_col {
 
 table .btn-outer {
   text-align: center;
+  width: 100px !important;
+}
+
+table .btn-outer .btn {
+  width: 80px !important;
 }
 
 .search_result {
@@ -10522,6 +10527,17 @@ table td {
   border-bottom: 1px solid #ccc;
   padding: 10px 20px;
   font-weight: 100;
+}
+
+table th .search_box,
+table td .search_box {
+  width: calc( 100% - 60px);
+  display: inline-block;
+}
+
+table th .search_button,
+table td .search_button {
+  display: inline-block;
 }
 
 .table-bordered th,
@@ -10744,6 +10760,15 @@ h1 {
   /* display: none; */
 }
 
+.search_box {
+  width: calc( 100% - 69px);
+  display: inline-block;
+}
+
+.search_button {
+  width: 20%;
+}
+
 .content_wrapper {
   max-width: 768px;
   margin: 0 auto;
@@ -10763,8 +10788,20 @@ h1 {
 }
 
 .controll_buttons .btn:hover {
-  background-color: #29e6ff;
+  background-color: gray;
   color: #fff;
+}
+
+.controll_buttons .btn-danger:hover {
+  background-color: crimson;
+}
+
+.controll_buttons .btn-success:hover {
+  background-color: limegreen;
+}
+
+.overflow_btn .btn {
+  width: inherit;
 }
 
 .row {
