@@ -57,7 +57,9 @@
             </tr>
             　<tr>
                 <th class="left">支払い金額</th>
-                <td></td>
+                <td>
+
+                </td>
             </tr>
             <tr>
                 <th class="left">更新者</th>
