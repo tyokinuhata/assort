@@ -10,25 +10,60 @@
 			<th colspan="4">発注情報</th>
 		</tr>
 		<tr>
+			<th>発注伝票番号</th>
+			<td colspan="3">
+				<input class="form-control" type="text" name=""maxlength="40" value="" placeholder="発注伝票番号">
+			</td>
+		</tr>
+		<tr>
+			<th>仕入先コード</th>
+			<td>
+				<div class="search_box"><input class="form-control" type="text" name=""maxlength="40" value="" placeholder="仕入先コード"></div>
+				<div class="search_button"><button class="btn">検索</button></div>
+			</td>
+			<th>仕入先名</th>
+			<td><input class="form-control" type="text" name=""maxlength="40" value="" placeholder="仕入先コード"></td>
+		</tr>
+		<tr>
 			<th>商品コード</th>
 			<td>
 				<div class="search_box"><input class="form-control" type="text" name=""maxlength="40" value="" placeholder="商品コード"></div>
 				<div class="search_button"><button class="btn">検索</button></div>
 			</td>
 			<th>商品名</th>
-			<td>検索結果</td>
+			<td><input class="form-control" type="text" name=""maxlength="40" value="" placeholder="仕入先コード"></td>
 		</tr>
 		<tr>
 			<th>発注日</th>
-			<td><input class="form-control" type="text" name="" maxlength="10" value="" placeholder="2000-12-31"></td>
+			<td>
+				<input class="form-control" type="text" name="" maxlength="10" value="" placeholder="2000-12-31">
+			</td>
+			<th>～</th>
+			<td>
+				<input class="form-control" type="number" name="" size="7" maxlength="7" value="" placeholder="2000-12-31">
+			</td>
+		</tr>
 			<th>納期</th>
-			<td><input class="form-control" type="text" name="" maxlength="10" value="" placeholder="2000-12-31"></td>
+			<td>
+				<input class="form-control" type="text" name="" maxlength="10" value="" placeholder="2000-12-31">
+			</td>
+			<th>～</th>
+			<td>
+				<input class="form-control" type="number" name="" size="7" maxlength="7" value="" placeholder="2000-12-31">
+			</td>
 		</tr>
 		<tr>
-			<th>仕入先</th>
-			<td><input class="form-control" type="text" name=""maxlength="60" value="" placeholder="仕入先"></td>
-			<th>支払先</th>
-			<td><input class="form-control" type="text" name=""maxlength="60" value="" placeholder="支払先"></td></td>
+			<th class="left">支払先コード</th>
+			<td>
+				<div class="search_box"><input class="form-control" type="text" name="" size="60" maxlength="60" value="" placeholder="支払先コード"></div>
+				<div class="search_button"><button class="btn">検索</button></div>
+			</td>
+			<th class="left">支払先名</th>
+			<td>
+				<input class="form-control search_box" type="text" name="" size="60" maxlength="60" value="" placeholder="支払先名">
+				<div class="search_button"><button class="btn">検索</button></div>
+
+			</td>
 		</tr>
 		<tr>
 			<th>発注担当者</th>

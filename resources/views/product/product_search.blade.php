@@ -13,29 +13,31 @@
 			<tr>
 				<th>仕入先コード</th>
 				<td>
-					<input class="form-control search_box" type="text" name="brand_code">
-					<button class="btn btn-dark search_button">検索</button>
+					<div class="search_box"><input class="form-control" type="text" name="brand_code"></div>
+					<div class="search_button"><button class="btn btn-dark">検索</button></div>
 				</td>
 				<th class="">仕入先名</th>
-				<td><input class="form-control search_box" type="text">
-					<button class="btn btn-dark search_button">検索</button>
+				<td>
+					<div class="search_box"><input class="form-control" type="text"></div>
+					<div class="search_button"><button class="btn btn-dark">検索</button></div>
 				</td>
 			</tr>
 			<tr>
 				<th>商品コード</th>
 				<td>
-					<input class="form-control search_box" type="text">
-					<button class="btn btn-dark search_button">検索</button>
+					<div class="search_box"><input class="form-control" type="text"></div>
+					<div class="search_button"><button class="btn btn-dark ">検索</button></div>
 				</td>
 				<th class="">商品名</th>
-				<td><input class="form-control search_box" type="text">
-					<button class="btn btn-dark search_button">検索</button>
+				<td>
+					<div class="search_box"><input class="form-control " type="text"></div>
+					<div class="search_button"><button class="btn btn-dark ">検索</button></div>
 				</td>
 			</tr>
 			<tr>
 				<th>親カテゴリ</th>
 				<td>
-					<select class=" select2" name="" id="">
+					<select class="form-control" name="" id="">
 						<option value="">アレ</option>
 						<option value="">コレ</option>
 						<option value="">ドレ</option>
@@ -43,7 +45,7 @@
 				</td>
 				<th>カテゴリ</th>
 				<td>
-					<select class=" select2" name="" id="">
+					<select class="form-control" name="" id="">
 						<option value="">ソレ</option>
 						<option value="">ホレ</option>
 						<option value="">オレ</option>
